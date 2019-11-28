@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Procesamiento de imagenes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+
+  <body>
+    <main>
+      <h4>Template</h4>
+      <h3>Imagen</h3>
+      <div class="temp">
+        <canvas id="template" width="114" height=107></canvas>
+        <label for="gen">Generaciones</label>
+        <input id="gen" type="number" name="gen" value="0" placeholder="0" onchange="validar()">
+        <label for="tam">Tamaño</label>
+        <input id="tam" type="number" name="tam" value="0" placeholder="0" onchange="validar()">
+        <button class="btn" type="button" name="button" onclick="initSol()">Buscar</button>
+
+        <label for="imagen"></label>
+      </div>
+      <div class="pict">
+        <canvas id="canvas" width="645" height="475"></canvas>
+        <div id="fitness" class="fitness"></div>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/img.js"></script>
+  </body>
+</html>
